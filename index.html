@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> GPA CALCULATOR</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./gpcalc.css">
+
+
+</head>
+
+<body class="text-center">
+    <img src="./img1.png" width="80%" height="200px" class="mb-3 mt-5 mx-auto">
+
+
+    <ul class="nav nav-tabs justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active " data-toggle="tab" href="#gpa"><strong> G.P.A</strong></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#cgpa"><strong> C.G.P.A</strong></a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="gpa" class="container tab-pane text-left pt-3 active"><br>
+
+
+            <div class="w-100 mx-auto bg-success p-3">
+                <form name="gp">
+
+
+                    <div class="container d-flex justify-content-around text-light text-left m-3">
+                        <div class="w-25">
+                            <h3><em>COURSES </em> </h3>
+                        </div>
+                        <div class="w-25 ">
+                            <h3><em> CREDIT UNIT </em> </h3>
+
+                        </div>
+
+                        <div class=" text-center ">
+                            <h3><em>GRADE POINT </em> </h3>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="container d-flex justify-content-between">
+                        <div class="form-group w-25">
+                            <input type="text" class="form-control" placeholder="Course 1">
+                        </div>
+                        <div class="form-group w-25">
+
+                            <input type="number" class="form-control" placeholder="Credit Unit 1" id="cu1" required>
+                        </div>
+
+                        <div class=" ">
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade1" value="5">
+                                    A{5}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade1" value="4">
+                                    B{4}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade1" value="3">
+                                    C{3}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade1" value="2">
+                                    D{2}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade1" value="0" checked>
+                                    F{0}</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <br>
+
+
+                    <div class="container d-flex justify-content-between">
+                        <div class="form-group w-25">
+                            <input type="text" class="form-control" placeholder="Course 1">
+                        </div>
+                        <div class="form-group w-25">
+
+                            <input type="number" class="form-control w-100" placeholder="Credit Unit 2" id="cu2"
+                                required>
+                        </div>
+
+                        <div class=" ">
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade2" value="5">
+                                    A{5}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade2" value="4">
+                                    B{4}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade2" value="3">
+                                    C{3}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade2" value="2">
+                                    D{2}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade2" value="0" checked>
+                                    F{0}</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <br>
+
+
+                    <div class="container d-flex justify-content-between">
+                        <div class="form-group w-25">
+                            <input type="text" class="form-control" placeholder="Course 1">
+                        </div>
+                        <div class="form-group w-25">
+
+                            <input type="number" class="form-control w-100" placeholder="Credit Unit 3" id="cu3"
+                                required>
+                        </div>
+
+                        <div class=" ">
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade3" value="5">
+                                    A{5}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade3" value="4">
+                                    B{4}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade3" value="3">
+                                    C{3}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade3" value="2">
+                                    D{2}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade3" value="0" checked>
+                                    F{0}</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <br>
+
+
+                    <div class="container d-flex justify-content-between">
+                        <div class="form-group w-25">
+                            <input type="text" class="form-control" placeholder="Course 1">
+                        </div>
+                        <div class="form-group w-25">
+
+                            <input type="number" class="form-control w-100" placeholder="Credit Unit 4" id="cu4"
+                                required>
+                        </div>
+
+                        <div class=" ">
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade4" value="5" required>
+                                    A{5}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade4" value="4">
+                                    B{4}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade4" value="3">
+                                    C{3}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade4" value="2">
+                                    D{2}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade4" value="0" checked>
+                                    F{0}</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <br>
+
+
+                    <div class="container d-flex justify-content-between">
+                        <div class="form-group w-25">
+                            <input type="text" class="form-control" placeholder="Course 1">
+                        </div>
+                        <div class="form-group w-25">
+
+                            <input type="number" class="form-control w-100" placeholder="Credit Unit 5" id="cu5"
+                                required>
+                        </div>
+
+                        <div class=" ">
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade5" value="5">
+                                    A{5}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade5" value="4">
+                                    B{4}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade5" value="3">
+                                    C{3}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade5" value="2">
+                                    D{2}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade5" value="0" checked>
+                                    F{0}</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <br>
+
+
+                    <div class="container d-flex justify-content-between">
+                        <div class="form-group w-25">
+                            <input type="text" class="form-control" placeholder="Course 1">
+                        </div>
+                        <div class="form-group w-25">
+
+                            <input type="number" class="form-control w-100" placeholder="Credit Unit 6" id="cu6"
+                                required>
+                        </div>
+
+                        <div class=" ">
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade6" value="5">
+                                    A{5}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade6" value="4">
+                                    B{4}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade6" value="3">
+                                    C{3}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade6" value="2">
+                                    D{2}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade6" value="0" checked>
+                                    F{0}</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <br>
+
+
+                    <div class="container d-flex justify-content-between">
+                        <div class="form-group w-25">
+                            <input type="text" class="form-control" placeholder="Course 1">
+                        </div>
+                        <div class="form-group w-25">
+
+                            <input type="number" class="form-control w-100" placeholder="Credit Unit 7" id="cu7"
+                                required>
+                        </div>
+
+                        <div class=" ">
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade7" value="5">
+                                    A{5}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade7" value="4">
+                                    B{4}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade7" value="3">
+                                    C{3}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade7" value="2">
+                                    D{2}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade7" value="0" checked>
+                                    F{0}</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <br>
+
+
+                    <div class="container d-flex justify-content-between">
+                        <div class="form-group w-25">
+                            <input type="text" class="form-control" placeholder="Course 1">
+                        </div>
+                        <div class="form-group w-25">
+
+                            <input type="number" class="form-control w-100" placeholder="Credit Unit 8" id="cu8"
+                                required>
+                        </div>
+
+                        <div class=" ">
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade8" value="5">
+                                    A{5}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade8" value="4">
+                                    B{4}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade8" value="3">
+                                    C{3}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade8" value="2">
+                                    D{2}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade8" value="0" checked>
+                                    F{0}</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <br>
+
+
+                    <div class="container d-flex justify-content-between">
+                        <div class="form-group w-25">
+                            <input type="text" class="form-control" placeholder="Course 1">
+                        </div>
+                        <div class="form-group w-25">
+
+                            <input type="number" class="form-control w-100" placeholder="Credit Unit 9" id="cu9"
+                                required>
+                        </div>
+
+                        <div class=" ">
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade9" value="5">
+                                    A{5}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade9" value="4">
+                                    B{4}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade9" value="3">
+                                    C{3}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade9" value="2">
+                                    D{2}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade9" value="0" checked>
+                                    F{0}</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                    <br>
+
+
+                    <div class="container d-flex justify-content-between">
+                        <div class="form-group w-25">
+                            <input type="text" class="form-control" placeholder="Course 1">
+                        </div>
+                        <div class="form-group w-25">
+
+                            <input type="number" class="form-control w-100" placeholder="Credit Unit 10" id="cu10"
+                                required>
+                        </div>
+
+                        <div class=" ">
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade10" value="5">
+                                    A{5}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade10" value="4">
+                                    B{4}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade10" value="3">
+                                    C{3}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade10" value="2">
+                                    D{2}</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label for="" class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="grade10" value="0" checked>
+                                    F{0}</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <center><input type="button" class="btn btn-primary btn-lg  w-25 mt-5 mb-3" onclick="calc()"
+                            value="Check G.P.A">
+                    </center>
+
+
+
+                </form>
+                <div id="showTable">
+                    <h2>
+                        <table id="table" class="text-light mt-3 w-50 mx-auto bg-primary ">
+                            <tbody class="w-100">
+                                <tr>
+                                    <td>Total Weighted GP</td>
+                                    <td id="td1"></td>
+                                </tr>
+                                <tr>
+                                    <td>Total Credit Unit</td>
+                                    <td id="td2"></td>
+                                </tr>
+                                <tr>
+                                    <td>Grade Point Average</td>
+                                    <td id="td3"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </h2>
+                </div>
+                <br>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <div id="cgpa" class="container tab-pane  pt-3 ">
+
+            <div class=" mx-auto bg-success p-3 text-light">
+                <form>
+                    <div class="container d-flex justify-content-between text-light text-left m-3"">
+                        <div class= " w-50">
+                        <h3><em>WEIGHTED G.P </em> </h3>
+                    </div>
+                    <div class="w-25 ">
+                        <h3><em> CREDIT UNIT </em> </h3>
+
+                    </div>
+
+
+            </div>
+
+
+            <div class="container d-flex justify-content-between">
+
+                <div class="form-group w-50">
+
+                    <input type="number" class="form-control w-100" placeholder="Total WGP 1" id="wgp1">
+                </div>
+
+                <div class="form-group w-25">
+
+                    <input type="number" class="form-control w-100" placeholder="Total Credit unit 1" id="tcu1">
+                </div>
+
+            </div>
+
+            <div class="container d-flex justify-content-between">
+
+                <div class="form-group w-50">
+
+                    <input type="number" class="form-control w-100" placeholder="Total WGP 2" id="wgp2">
+                </div>
+
+                <div class="form-group w-25">
+
+                    <input type="number" class="form-control w-100" placeholder="Total Credit unit 2" id="tcu2">
+                </div>
+
+            </div>
+
+            <center><input type="button" class="btn btn-primary btn-lg  w-25 mt-5 mb-3" onclick="cgpa()"
+                    value="Check C.G.P.A"></center>
+            </form>
+
+
+            <div id="showTable2">
+                <h2>
+                    <table id="table2" class="text-light mt-3 mx-auto bg-primary w-50">
+                        <tr>
+                            <td>Total Weighted GP</td>
+                            <td id="td4"></td>
+                        </tr>
+                        <tr>
+                            <td>Total Credit Unit</td>
+                            <td id="td5"></td>
+                        </tr>
+                        <tr>
+                            <td>Cummulative Grade Point Average (CGPA)</td>
+                            <td id="td6"></td>
+                        </tr>
+                    </table>
+                </h2>
+            </div>
+        </div>
+
+
+
+    </div>
+    <br>
+    <footer class="text-center text-dark"><em>Powered by</em> DevBasito</footer>
+
+</body>
+
+<script src="./gpcalc.js"></script>
+
+</html>
